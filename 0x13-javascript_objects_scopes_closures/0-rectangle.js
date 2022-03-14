@@ -1,3 +1,2 @@
-class Rectangle {
-  constructor() {...}
-}
+#!/usr/bin/node
+module.exports = class Rectangle {};
