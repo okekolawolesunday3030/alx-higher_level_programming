@@ -1,4 +1,6 @@
-$('div#red_header').click(function(){
-	document.getElementById('red_header').style.color ='#FF0000';
+$(function(){
+	$('div#red_header').click(function(){
+		document.getElementById('header').style.color ='#FF0000';
 
+	)};
 )};
