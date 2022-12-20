@@ -8,25 +8,20 @@ module.exports = class Rectangle {
     }
   }
 
-  print (){
-
-    for(let i = 0; i < this.height; i++) {
-
+  print () {
+    for (let i = 0; i < this.height; i++) {
       console.log('X'.repeat(this.width));
-
     }
-
   }
-  
+
   double () {
-   this.width *= 2;
-   this.height *= 2;
+    this.width *= 2;
+    this.height *= 2;
   }
 
   rotate () {
-const tmp = this.width;
-  this.width = this.height;
-  this.height = tmp;
+    const tmp = this.width;
+    this.width = this.height;
+    this.height = tmp;
   }
-
 };
