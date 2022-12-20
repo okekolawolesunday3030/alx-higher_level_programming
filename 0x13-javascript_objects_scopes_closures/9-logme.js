@@ -3,7 +3,6 @@
 let value = 0;
 
 exports.logMe = function (item) {
-  console.log( + ': ' + item)
+  console.log(value + ': ' + item);
   value++;
-
-}
+};
