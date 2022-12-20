@@ -1,16 +1,14 @@
 #!/usr/bin/node
 
 const myArgs = process.argv.slice(2);
-var num = myArgs[0];
+const num = myArgs[0];
 
-function factorial(num){
-
-	if(isNaN(num)){
-		return (1);
-	}		
-		num *= factorial (num-1);
-        return (num);
-}	
+function factorial (num) {
+  if (isNaN(num) || (num <= 0)) {
+    return (1);
+  } else {
+    num *= factorial(num - 1);
+    return (num);
+  }
+}
 console.log(factorial(num));
-
-
